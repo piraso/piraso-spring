@@ -19,6 +19,7 @@ package org.piraso.ui.spring.provider;
 import org.openide.util.lookup.ServiceProvider;
 import org.piraso.api.entry.Entry;
 import org.piraso.api.spring.SpringPreferenceEnum;
+import org.piraso.ui.api.EntryRowColumn;
 import org.piraso.ui.api.EntryRowRenderingProvider;
 
 import javax.swing.*;
@@ -35,7 +36,7 @@ public class SpringEntryRowRenderingProviderImpl implements EntryRowRenderingPro
     }
 
     @Override
-    public void render(JLabel cell, Entry entry) {
+    public void render(JLabel cell, Entry entry, EntryRowColumn column) {
         cell.setBackground(new Color(0xBAEEBA));
         cell.setForeground(new Color(0x008000));
     }
